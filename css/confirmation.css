@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.confirmation_page{
+    background-image: url("https://www.wallpapers13.com/wp-content/uploads/2016/01/Beautiful-scenery-tree-sea-sunset-HD-wallpaper-3842-1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.confirmation_header{
+    font-size: 5vh;
+    text-shadow: 3px 3px rgba(0,0,0,0.8);
+    padding-top: 5vh;
+}
+
+.greetings{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vh;
+    margin-top: 5vh;
+    border-radius: 5vh;
+    text-shadow: 2px 3px rgba(0,0,0,0.9);
+}
+
+.confirmation_info{
+    margin-top: 5vh;
+    border-radius: 5vh;
+    font-size: 7vh;
+    background-color: rgba(0,0,0,0.9);
+    margin: 8vh;
+    padding: 5vh 2vh 5vh 2vh;
+}
+
+.back_button{
+    background-color: rgba(23, 30, 32, 0.7);
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    width: 15vh;
+    height: 8vh;
+    margin: 0 4vh 4vh;
+    cursor: pointer;
+}
+
+footer{
+    padding: 3vh;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    text-shadow: 2px 2px rgb(15, 44, 15);
+    background: rgba(0,0,0,0.9);
+}
+
+/* Responsive Css */
+
+@media screen and (max-width: 1200px) {
+    .confirmation_info{
+        font-size: 4vh;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .confirmation_info{
+        font-size: 3.5vh;
+        text-align: justify;
+        margin: 4vh;
+        padding: 3vh;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .confirmation_header{
+        font-size: 3vh;
+    }
+    .greetings{
+        font-size: 2vh;
+    }
+}

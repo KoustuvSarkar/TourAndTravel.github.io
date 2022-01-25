@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: cursive;
+}
+
+.wrapper{
+    background-image: url("../images/maldives_cover.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.maldives_header_section{
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px rgba(0,0,0,0.9);
+    font-family: cursive;
+}
+
+.heading > h1{
+    font-size: 10vh;
+    padding-top: 15vh;   
+}
+
+.heading > span{
+    word-spacing: 15px;
+    font-size: 5vh;
+}
+
+.about_maldives p{
+    padding: 3vh;
+    margin: 10vh 40vh;
+    text-align: justify;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: rgba(17, 75, 92, 0.274);
+}
+
+.spot_heading{
+    color: white;
+    font-size: 6vh;
+    padding-left: 28vh;
+    text-shadow: 2px 2px rgba(0,0,0,0.9);
+    text-decoration: underline;
+}
+
+.spot_container{
+    display: flex;
+    gap: 1.5rem;
+    margin: 5vh 9vh;
+    background-color: rgba(17, 75, 92, 0.274);
+    border-radius: 1rem;
+}
+
+.spot_image{
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.spot_image img{
+    width: 92%;
+    border-radius: 1rem;
+    /* margin-left: 4vh; */
+}
+
+.spot_info{
+    float: right;
+    text-shadow: none;
+    text-align: justify;
+    padding: 1rem;
+    color: #fff;
+}
+
+.vadhoo_img{
+    padding-right: 4vh;
+    width: 145%;
+}
+
+.sun_island{
+    width: 80%;
+}
+
+.button{
+    background-color: rgba(17, 74, 92, 0.5);
+    float: right;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    width: 30vh;
+    height: 6vh;
+    margin: 4vh;
+    cursor: pointer;
+}
+
+.back_button{
+    background-color: rgba(17, 74, 92, 0.5);
+    float: left;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    width: 30vh;
+    height: 6vh;
+    margin: 4vh;
+    cursor: pointer;
+}
+
+footer{
+    padding: 3vh;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    text-shadow: 2px 2px rgb(15, 44, 15);
+    background: rgba(0,0,0,0.9);
+}
+
+/* RESPONSIVE CSS */
+@media screen and (min-width: 1801px ){
+    .spot_image img {
+        width: 87%;
+        margin-bottom: 3vh;
+    }
+    .spot_info{
+        padding: 2rem;
+        font-size: 2rem;
+    }
+    .spot_heading{
+        padding-left: 12vh;
+    }
+    .vadhoo_img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1800px) and (min-width: 900px ) {
+    .about_maldives p{
+        margin: 6vh 8vh;
+    }
+    .heading > h1{
+        font-size: 8vh;
+    }  
+    .heading > span{
+        font-size: 4vh;
+    }
+    .spot_heading{
+        font-size: 5vh;
+        padding-left: 11vh;
+    }
+    .spot_image img{
+        height: 92%;;
+        margin-left: 2vh;
+    }
+    .vadhoo_img{
+        padding-left: 3vh;
+        width: 148%;
+        padding-bottom: 4vh;
+    }
+
+}
+
+@media screen and (max-width: 1024px ) and (min-width:800){
+    .button_link{
+        display: flex;
+    }
+    .button{
+        margin-left: 2vh;
+    }
+}
+
+@media screen and (max-width: 899px ){
+    .about_maldives p{
+        display: none;
+    }
+    .heading > h1{
+        font-size: 7vh;
+    }  
+    .heading > span{
+        font-size: 3vh;
+        text-decoration: none !important;
+    }
+    .spot_container{
+        display: block;
+        margin: 4vh;
+    }
+    .spot_heading{
+        font-size: 3vh;
+        padding-left: 5vh;
+        padding-top: 3vh;
+    }
+    .spot_image img{
+        width: 80%;
+        margin-left: 1vh;
+    }
+    .vadhoo_img{
+        padding-right: 4vh;
+        width: 95%;
+        padding-bottom: 3vh
+    }
+    .sun_island{
+        width: 100%;
+    }
+    .button_link{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .heading > h1{
+        font-size: 4vh;
+    }
+    
+    .heading > span{
+        font-size: 2vh;
+        text-decoration: none !important;
+    }
+}

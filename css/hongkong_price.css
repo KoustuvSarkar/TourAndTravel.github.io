@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-family: cursive;
+    overflow-x: hidden;
+}
+
+.price_details{
+    background-image: url('../images/Hong-kong_price_cover.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.spot_heading{
+    padding: 5vh;
+    font-size: 7vh;
+    text-shadow: 4px 4px rgba(0,0,0,0.9);
+}
+
+.detail_content{
+    padding: 10vh;
+}
+
+.tour_content{
+    background-color: rgba(15, 13, 13, 0.7);
+    display: flex;
+    padding: 5vh;
+    border-radius: 4vh;
+}
+
+.tour_img{
+    width: 180%;
+}
+
+.tour_img img{
+    height: 60Vh;
+    border-radius: 4vh;
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.about_tour{
+    padding: 2vh;
+}
+
+.about_tour h3{
+    /* word-spacing: 1vh; */
+    font-size: 6vh;
+    text-shadow: 2px 2px rgba(0,0,0,0.9);
+    text-decoration: underline;
+}
+
+.about_tour p{
+    padding: 3vh;
+    text-align: justify;
+}
+
+.price_table{
+    padding-top: 5vh;
+}
+
+.table_details{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(15, 13, 13, 0.7);
+    border-radius: 4vh;
+}
+
+.table_caption{
+    font-size: 6vh;
+    text-shadow: 3px 3px rgba(0,0,0,0.9);
+    text-decoration: underline;
+}
+
+tr th, td{
+    text-align: justify;
+    padding: 2vh;
+    font-size: 5vh;
+    text-shadow: 2px 2px rgba(0,0,0,0.9);
+    padding-bottom: 1vh;
+}
+
+.button{
+    background-color: rgba(23, 30, 32, 0.7);
+    float: right;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    width: 30vh;
+    height: 6vh;
+    margin: 4vh;
+    cursor: pointer;
+}
+
+.back_button{
+    background-color: rgba(23, 30, 32, 0.7);
+    float: left;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    width: 30vh;
+    height: 6vh;
+    margin: 4vh;
+    cursor: pointer;
+}
+
+footer{
+    padding: 3vh;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    text-shadow: 2px 2px rgb(15, 44, 15);
+    background: rgba(0,0,0,0.9);
+}
+
+/* RESPONSIVE CSS */
+@media screen and (max-width: 1400px) {
+    .tour_content{
+        display: block;
+        padding: 2vh;
+    }
+    .tour_img{
+        width: 100%;
+    }
+    
+    .tour_img img{
+        height: 40Vh;
+    }
+}
+@media screen and (max-width: 800px ){
+    .button_link{
+        display: flex;
+    }
+    .button{
+        margin-left: 2vh;
+    }
+    .tour_img img{
+        width: 95%;
+    }
+    .about_tour h3{
+        font-size: 3.5vh;
+    }
+    .about_tour p{
+        padding: 1.5vh;
+        text-align: justify;
+    }
+    .table_caption{
+        font-size: 3vh;
+    }
+    tr th, td{
+        font-size: 2vh;
+    }    
+}
+
+@media screen and (max-width: 625px) {
+    .spot_heading{
+        padding: 5vh;
+        font-size: 3vh;
+    }
+    .detail_content{
+        padding: 2vh;
+    }
+    .about_tour p{
+        text-align: left;
+    }
+    .table_caption{
+        font-size: 2vh;
+    }
+    tr th, td{
+        font-size: 1vh;
+    }
+}

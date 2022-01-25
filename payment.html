@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./css/payment.css">
+</head>
+
+<body>
+    <section class="payment_body">
+        <h1>Make Your Payment Here!!</h1>
+        <form action="/confirmation.html">
+            <h3>Payment</h3>
+            <label for="Payer Name">Card Holder</label>
+            <input type="text" class="input_box_one" id="Name" placeholder="Enter Name"   required> <br>
+            <label for="Email">Enter Email</label>
+            <input type="email" class="input_box_one" name="email" id="Email" placeholder="Enter Your Email ID" required autocomplete="off"> <br>
+            <label for="Card No">Card Number</label>
+            <input type="number" class="input_box_one" name="number" id="Number" placeholder="1234 1234 1234 1234"  required autocomplete="off"> <br>
+            <div class="part_style">
+                <label for="Exp Month">Exp Month</label> <br>
+                <input type="month"  class="input_box_two" name="month" id="Month" placeholder="MM" required autocomplete="off">
+            </div>
+            <div class="part_style">
+                <label for="Exp Year">Card Exp Year</label> <br>
+                <input type="number" class="input_box_two" name="year" id="Year" placeholder="YYYY"  required autocomplete="off"> 
+            </div>
+            <div class="part_style">
+                <label for="Cvv no">CVV</label> <br>
+                <input type="cvc" class="input_box_two" name="number" id="CVV No" placeholder="Cvc" maxlength="3" required autocomplete="off">
+            </div>            
+            <button class="pay_btn" type="submit">Pay Now</button>
+        </form>  
+        <div class="back_btn">
+            <button onclick="document.location='index.html'" class="back_button">Home</button>
+        </div>
+    </section>
+    <footer>
+        <div><b>Facing issues with our web? 
+            Contact Us: sarkartravel@gmail.com</b>
+        </div>
+        <div style="padding-top: 3px;">Copyright &copy;2021 Sarkar Travel. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
